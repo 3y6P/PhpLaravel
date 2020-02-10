@@ -1,0 +1,451 @@
+body {
+  border: none;
+  height: 100%;
+  /* IE & Opera relative font size cascading bug */
+  font-size: 100.01%;
+  margin: 0;
+  /* IE 7 bug (if the line-height property is not equal to normal) */
+  vertical-align: baseline;
+}
+
+/**
+ * Font size adjust after orientation change
+ *
+ * @bugfix
+ * @affected Safari
+ * @valid yes
+ */
+html {
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+/* Typography */
+
+body {
+  font-family: "Liberation Serif", serif !important;
+  font-size: 4.512mm !important;
+  line-height: 1.5 !important;
+}
+
+body > p {
+  font-size: 3.76mm !important;
+  text-align: center;
+}
+
+.ministry {
+  text-transform: uppercase;
+}
+
+.university {
+  line-height: 1.1;
+}
+
+.college {
+  font-weight: bold;
+}
+
+caption,
+li,
+p {
+  text-align: justify;
+}
+
+caption:before {
+  letter-spacing: 0.752mm;
+}
+
+figcaption {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  text-indent: 9.024mm !important;
+}
+
+h1 {
+  font-size: 6.016mm !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+}
+
+h2 {
+  font-size: 5.264mm !important;
+  line-height: 1.5 !important;
+  margin-top: 1em !important;
+}
+
+h3 {
+  font-size: 5.264mm !important;
+  line-height: 1.5 !important;
+  margin-top: .5em !important;
+}
+
+header h1 {
+  font-size: 3.76mm !important;
+}
+
+header p {
+  text-align: center;
+  text-indent: 0;
+}
+
+
+
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+
+
+a {
+  color: #337AB7 !important;
+  text-decoration: underline !important;
+}
+/*
+body {
+  color: #333 !important;
+}
+
+figure img {
+    border-radius: 3px;
+    border: 1px solid #CCC;
+}
+*/
+
+
+
+
+
+/* Counters */
+
+
+:not(pre) > code {/*
+  background-color: #EEE;
+  color: #c7254e;*/
+  font-size: 3.76mm;
+}
+
+pre {
+  margin: 0;
+}
+
+ul li:before {
+  content: "\2043\2002\2060";
+}
+
+table {
+  font-size: 3.76mm;
+  /*margin: 0 0 0 2em;*/
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+table,
+td,
+th {
+  border: 1px solid #CCC;
+}
+
+
+img,
+video {
+  width: 100%;
+}
+*/
+
+figure {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+blockquote {
+  background: #F2DEDE url(exclamation.svg) .5em .5em no-repeat;
+
+  border-radius: .5em;
+  font-size: 3.76mm;
+  margin: 0 0 0 4em;
+  padding: .5em;
+}
+
+/* Counters */
+
+body {
+  counter-reset: figure;
+  counter-reset: table;
+}
+
+caption {
+  counter-increment: table;
+}
+
+caption:before {
+  content: "Таблица\A0" counter(table) "\2014";
+}
+
+figcaption:before {
+  content: "Рисунок\A0" counter(figure) "\2009\2060\2014\2009";
+}
+
+figure {
+  counter-increment: figure;
+}
+
+h1 {
+  counter-reset: header;
+}
+
+h2 {
+  counter-increment: header;
+  counter-reset: subheader;
+}
+
+h2:before {
+  content: counter(header) ".\2002\2060";
+}
+
+h3 {
+  counter-increment: subheader;
+}
+
+h3:before {
+  content: counter(header) "." counter(subheader) ".\2002\2060";
+}
+
+ol {
+  counter-reset: ol;
+}
+
+ol li {
+  counter-increment: ol;
+}
+
+ol li:before {
+  content: counter(header) "." counter(ol) ".\2002\2060";
+}
+
+ol p,
+ul p {
+  display: inline-block;
+}
+
+
+ol p:first-child,
+ul p:first-child {
+  text-indent: 0;
+}
+
+pre {
+  margin: 0 !important;
+  text-indent: 0;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-left: 2em;
+}
+
+
+/* highlight.js */
+
+.sourceCode {
+  font-size: 3.384mm !important;
+}
+
+div.sourceCode {
+  background-color: #F7F7F9;
+  border: 1px solid #E1E1E8;
+  border-radius: .5em;
+  display: block;
+  margin-left:  9.024mm;
+  overflow: auto;
+  /*
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  */
+}
+
+
+.hljs-line-numbers {
+  border-right: 1px solid #E1E1E8;
+  color: #999;
+  padding-right: 1.88mm;
+  text-align: right;
+  width: 7.144mm;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* highlight.js. HTML */
+
+code.css {
+  color: #000;
+}
+
+code.css .co .comment {
+  color: #060;
+}
+
+code.css .dt {
+  color: #900;
+}
+
+code.css .dt .number {
+}
+
+code.css .kw {
+  color: #000;
+  font-weight: normal;
+}
+
+code.css .kw .attribute {
+  color: #0151B3;
+  font-weight: bold;
+}
+
+code.css .selector-class,
+code.css .selector-tag {
+  color: #800180;
+}
+
+code.html {
+  color: #010101;
+}
+
+code.html .tag {
+  font-weight: normal;
+}
+
+code.html .dt,
+code.html .kw,
+code.html .meta,
+code.html .ot {
+  color: #800180;
+}
+
+code.html .st {
+  color: #0151B3;
+}
+
+/* highlight.js. PHP */
+
+.php,
+.php .fu .keyword,
+.php .ot {
+  color: #070;
+}
+
+/*code.php .co,*/
+.php .co .comment {
+  color: #FF8000;
+}
+
+/*code.php .dv,*/
+.php .dv .number,
+.php .fu,
+.php .kw,
+.php .kw .meta,
+.php .kw .string {
+  color: #00B;
+}
+
+.php .kw,
+.php .kw .meta {
+  font-weight: normal;
+}
+
+.php .st,
+.php .st .string {
+  color: #D00;
+}
+
+
+
+
+
+
+
+
+
+
+.bash {
+
+    color: #333;
+}
+
+
+
+::cue(v[voice="Джон"]) {
+  color: white;
+}
+
+::cue(v[voice="Барбра"]) {
+  color: pink;
+}
+
+::cue(i) {
+  font-style: italic;
+}
+
+::cue(.loud) {
+}
+
+
+.card {
+  margin: .5em 0 .5em 2em;
+}

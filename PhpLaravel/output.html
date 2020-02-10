@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="width">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title></title>
+
+  
+  
+  
+  <!--[if lt IE 9]>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+  </script>
+  <![endif]-->
+
+      <style>div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */</style>
+  
+      <link rel="stylesheet" href="styles/style.css">
+  
+  
+  
+</head>
+<body>
+
+      <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous">
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+      crossorigin="anonymous"></script>
+    
+    <script defer src="../scripts/highlight.min.js"></script>
+    <script defer src="../scripts/highlightjs-line-numbers.min.js"></script>
+    <script defer src="../scripts/script.js"></script>
+    
+    
+    <p class="ministry">Министерство образования и науки Российской Федерации</p>
+    <p class="university">федеральное государственное бюджетное образовательное учреждение высшего образования<br>«Российский экономический университет имени Г. В. Плеханова»</p>
+    <p class="college">Московский приборостроительный техникум</p>
+  
+  
+  
+  <main tabindex="-1"><section class="level1">
+<h1>Основы отзывчивого веб­‑дизайна</h1>
+<p><em>Отзывчивый веб­‑дизайн</em> (англ. responsive web design) ⁠— это подход, позволяющий веб­‑странице приспосабливаться к размерам области просмотра на дисплеях разнотипных устройств: мониторов, планшетов, смартфонов и т. п. Следует различать <em>отзывчивый</em> и <em>адаптивный</em> веб­‑дизайн: первый опирается на концепцию «один шаблон для бесконечного множества устройств» и медиа­‑запросы CSS, второй ⁠— на концепцию «по одному шаблону для каждого подмножества устройств». Классический пример адаптивной вёрстки ⁠— <a href="http://www.themaninblue.com/experiment/ResolutionLayout/">демонстрационный сайт Кэмерона Адамса</a>, где сценарий JavaScript в зависимости от ширины области просмотра активирует ту или иную таблицу стилей.</p>
+<figure>
+<img src="../media/bootstrap/adaptive-web-design.png" alt="Элементы веб­‑страницы меняют положение и пропорции в зависимости от размера дисплея" /><figcaption>Элементы веб­‑страницы меняют положение и пропорции в зависимости от размера дисплея</figcaption>
+</figure>
+<p>Отзывчивый веб­‑дизайн подчинён стратегии поступательного совершенствования (англ. progressive enhancement), которая требует обеспечить доступность основного контента веб­‑страницы во всех пользовательских агентах (браузерах), в т. ч. текстовых, и принуждает наращивать возможности веб­‑страниц таким образом, чтобы работоспособность более простых техник не зависела от более продвинутых. Так, отключение JavaScript не должно сказаться на оформлении или привести к полной неработоспособности элементов управления: меню, кнопок и пр. (эта концепция называется unobtrusive JavaScript ⁠— «ненавязчивый JavaScript»), отсутствие поддержки CSS ⁠— на читабельности текста и т. п.</p>
+<section class="level2">
+<h2>Базовый документ HTML 5.1</h2>
+<div class="card alert alert-primary" role="alert">
+Сохраните следующий фрагмент разметки как текстовый файл в кодировке UTF‑8 без BOM.
+</div>
+<div class="sourceCode" include="src/bootstrap/1.minimal.html"><pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!doctype </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;ru&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;utf-8&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;title&gt;</span>Заготовка для шаблона Bootstrap<span class="kw">&lt;/title&gt;</span>
+  <span class="kw">&lt;/head&gt;</span>
+  <span class="kw">&lt;body&gt;</span>
+  <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre></div>
+<p>Рекомендация HTML 5.1 требует размещать <em>декларацию кодировки символов</em> в составе последовательности из первых 1024 байтов документа [@html-5.1, § 4.2.5.5]. Для обратной совместимости со старыми браузерами требования ужесточаются: так, Internet Explorer 7 искал декларацию среди первых 256 октетов.</p>
+<p>В целях безопасности размещайте декларацию до любого контента, особенно динамического, в т. ч. извлечённого из базы данных.</p>
+</section>
+<section class="level2">
+<h2>Метаданные</h2>
+<div class="card alert alert-primary" role="alert">
+Вставьте следующий фрагмент разметки между тегами &lt;head&gt; и &lt;/head&gt;, желательно до стартового тега &lt;title&gt;.
+</div>
+<div class="sourceCode" include="src/bootstrap/2.add-meta.html"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;utf-8&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;meta</span><span class="ot"> http-equiv=</span><span class="st">&quot;X-UA-Compatible&quot;</span><span class="ot"> content=</span><span class="st">&quot;IE=Edge&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;HandheldFriendly&quot;</span><span class="ot"> content=</span><span class="st">&quot;true&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;MobileOptimized&quot;</span><span class="ot"> content=</span><span class="st">&quot;0&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;viewport&quot;</span>
+<span class="ot">      content=</span><span class="st">&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;</span><span class="kw">&gt;</span></code></pre></div>
+<p>Ключ <code>HandheldFriendly</code> появился в браузере AvantGo для карманных персональных компьютеров и для смартфонов BlackBerry. Значение <code>true</code> декларирует совместимость вёрстки веб­‑страницы с КПК, планшетам и смартфонам.</p>
+<p>Ключ <code>MobileOptimized</code> впервые реализовали в 2005 г. в браузере Pocket Internet Explorer под управлением операционной системы Windows Mobile 5.0 для КПК PocketPC [@firtman.mobile-web, с. 214]. Ключ позволял верстальщикам указать предпочтительную ширину экрана, причём значение <code>0</code> соответствовало ширине экрана на произвольном устройстве [@grimes.ie-mobile-6].</p>
+<p>Ключ <code>viewport</code> впервые реализовали в браузере Safari. Среди свойств <code>viewport</code> следует выделить <code>width</code>, <code>initial-scale</code> и <code>user-scalable</code>.</p>
+<p>Свойство <code>width</code> со значением <code>device-width</code> декларировало, что ширина веб­‑страницы адаптируется под ширину устройства, чем провоцировало побочные эффекты. Так, iPad 3 (2012 г.) даже в ландшафтной ориентации интерпретирует <code>width=device-width</code> как <code>width=768</code> и для исправления ошибки требует указать <code>initial-scale=1</code>. Safari 9.0 (2015 г.) при установке <code>width=device-width</code> уменьшает масштаб отображения веб­‑страницы, чтобы уместить в области просмотра негабаритные элементы. Прежнее поведение восстанавливает свойство <code>shrink-to-fit=no</code> [@new-in-safari-9.0].</p>
+<p>Свойство <code>initial-scale=1</code> устанавливает единичный коэффициент масштабирования веб­‑страницы при первом отображении [@safari-meta].</p>
+<p>Свойство <code>user-scalable</code> с установленным по умолчанию значением <code>yes</code> разрешает пользователю масштабировать веб­‑страницу в пределах от <code>minimum-scale</code> до <code>maximum-scale</code> [@safari-meta].</p>
+<p>Порядок следования ключей неслучаен и следует стратегии progressive enhancement, так как <code>MobileOptimized</code> переопределяет <code>HandheldFriendly</code>, а <code>viewport</code> переопределяет и <code>MobileOptimized</code>, и <code>HandheldFriendly</code> [@viewport-on-windows-phone-7].</p>
+</section>
+<section class="level2">
+<h2>Подключение Bootstrap</h2>
+<p>Скопируйте и вставьте в шаблон между тегами <code>&lt;head&gt;</code> и <code>&lt;/head&gt;</code>, желательно после конечного тега <code>&lt;/title&gt;</code>:</p>
+<div class="sourceCode" include="src/bootstrap/3.add-bootstrap.html"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;link</span>
+<span class="ot">  rel=</span><span class="st">&quot;stylesheet&quot;</span>
+<span class="ot">  href=</span><span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css&quot;</span>
+<span class="ot">  integrity=</span><span class="st">&quot;sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M&quot;</span>
+<span class="ot">  crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;script</span>
+<span class="ot">  defer</span>
+<span class="ot">  src=</span><span class="st">&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot;</span>
+<span class="ot">  integrity=</span><span class="st">&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot;</span>
+<span class="ot">  crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+<span class="kw">&lt;script</span>
+<span class="ot">  defer</span>
+<span class="ot">  src=</span><span class="st">&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js&quot;</span>
+<span class="ot">  integrity=</span><span class="st">&quot;sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4&quot;</span>
+<span class="ot">  crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+<span class="kw">&lt;script</span>
+<span class="ot">  defer</span>
+<span class="ot">  src=</span><span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js&quot;</span>
+<span class="ot">  integrity=</span><span class="st">&quot;sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1&quot;</span>
+<span class="ot">  crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></code></pre></div>
+<p>Опытные веб­‑разработчики размещают таблицы стилей CSS, сценарии JavaScript и другие утилитарные ресурсы в сетях доставки контента ⁠— content delivery network, сокращённо CDN. Сайты, которые ссылаются на один и тот же ресурс в одной и той же CDN, разрешают пользовательскому агенту ⁠— браузеру однократно скачать, а затем кешировать содержимое ресурса на установленный CDN срок и при последующих запросах по тому же URL заменить скачивание извлечением из кеша, с локального носителя.</p>
+<p>Однако злоумышленник способен изменить содержимое ресурса на сервере или вовсе перенаправить запрос на другой узел, причём TLS не пресечёт атаку, поскольку гарантирует подлинность <em>узла</em>, но не достоверность <em>контента</em>, а подложный узел наверняка предъявит годный сертификат. В этой связи Консорциум Всемирной паутины издал рекомендацию по контролю целостности субресурсов. Согласно спецификации, пользовательский агент отказывает в обработке контента, контрольная сумма которого не совпадает со значения атрибута <code>integrity</code>. <a href="https://www.w3.org/TR/2016/REC-SRI-20160623/">Рекомендация 2016 г.</a> и редакторский черновик за 26.08.2017 г. обязывают обеспечить расчёт контрольных сумм посредством хеш­‑функций SHA‑256, SHA‑384, SHA‑512 и распространяются только на элементы HTML <code>link</code> и <code>script</code> ⁠— поддержка <code>a</code>, <code>audio</code>, <code>embed</code>, <code>iframe</code>, <code>img</code>, <code>object</code>, <code>source</code>, <code>track</code>, <code>video</code> ожидается в последующих ревизиях.</p>
+</section>
+<section class="level2">
+<h2>Промежуточный результат</h2>
+<div class="sourceCode" include="src/bootstrap/4.base.html"><pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!doctype </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;ru&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;utf-8&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> http-equiv=</span><span class="st">&quot;X-UA-Compatible&quot;</span><span class="ot"> content=</span><span class="st">&quot;IE=Edge&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;HandheldFriendly&quot;</span><span class="ot"> content=</span><span class="st">&quot;true&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;MobileOptimized&quot;</span><span class="ot"> content=</span><span class="st">&quot;0&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;viewport&quot;</span>
+<span class="ot">          content=</span><span class="st">&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;title&gt;</span>Заготовка для шаблона Bootstrap<span class="kw">&lt;/title&gt;</span>
+    <span class="kw">&lt;link</span>
+<span class="ot">      rel=</span><span class="st">&quot;stylesheet&quot;</span>
+<span class="ot">      href=</span><span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css&quot;</span>
+<span class="ot">      integrity=</span><span class="st">&quot;sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M&quot;</span>
+<span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;script</span>
+<span class="ot">      defer</span>
+<span class="ot">      src=</span><span class="st">&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot;</span>
+<span class="ot">      integrity=</span><span class="st">&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot;</span>
+<span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+    <span class="kw">&lt;script</span>
+<span class="ot">      defer</span>
+<span class="ot">      src=</span><span class="st">&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js&quot;</span>
+<span class="ot">      integrity=</span><span class="st">&quot;sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4&quot;</span>
+<span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+    <span class="kw">&lt;script</span>
+<span class="ot">      defer</span>
+<span class="ot">      src=</span><span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js&quot;</span>
+<span class="ot">      integrity=</span><span class="st">&quot;sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1&quot;</span>
+<span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+  <span class="kw">&lt;/head&gt;</span>
+  <span class="kw">&lt;body&gt;</span>
+    
+  <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre></div>
+<p>Нажмите F12, перейдите на вкладку «Сеть» (Network) и убедитесь, что на все запросы методом HTTP GET получен ответ с кодом <code>200 OK</code> или <code>304 Not Modified</code>.</p>
+<p><strong>Все приведённые ниже фрагменты разметки следует размещать в теле документа, между тегами <code>&lt;body&gt;</code> и <code>&lt;/body&gt;</code>.</strong></p>
+</section>
+<section class="level2">
+<h2>Макет «сетка»</h2>
+<section class="level3">
+<h3>Контейнеры</h3>
+<p><mark>Контейнеры ⁠— базовый элемент вёрстки в Bootstrap.</p>
+<p>Адаптивная веб­‑вёрстка опирается на элементы, ширина, высота и положение которых изменяется в зависимости от размеров области просмотра. Старые спецификации, такие как CSS basic box model, слишком скупы на выразительные средства. Новые,</mark></p>
+<p>Ширина фиксированного контейнера зависит от ширины родительского элемента.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Ширина родителя, пикселей</td>
+<td>&lt; 576</td>
+<td>⩾ 576</td>
+<td>⩾ 768</td>
+<td>⩾ 992</td>
+<td>⩾ 1200</td>
+</tr>
+<tr class="even">
+<td>Ширина контейнера, пикселей</td>
+<td>auto</td>
+<td>540</td>
+<td>720</td>
+<td>960</td>
+<td>1140</td>
+</tr>
+</tbody>
+</table>
+<p>По умолчанию ширина блочного элемента HTML равна ширине родителя, следовательно, элементы <code>nav</code> и <code>article</code> не поместятся в одной строке и расположатся по вертикали. Для упрощения будем считать, что ширина <code>div.row</code> равна ширине области просмотра.</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;nav</span><span class="ot">     class=</span><span class="st">&quot;bg-primary&quot;</span><span class="kw">&gt;</span>nav<span class="kw">&lt;/nav&gt;</span>
+<span class="kw">&lt;article</span><span class="ot"> class=</span><span class="st">&quot;bg-warning&quot;</span><span class="kw">&gt;</span>article<span class="kw">&lt;/article&gt;</span></code></pre></div>
+<p>Поместим в контейнер Bootstrap.</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;container-fluid&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;row&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;nav</span><span class="ot">     class=</span><span class="st">&quot;bg-primary&quot;</span><span class="kw">&gt;</span>nav<span class="kw">&lt;/nav&gt;</span>
+    <span class="kw">&lt;article</span><span class="ot"> class=</span><span class="st">&quot;bg-warning&quot;</span><span class="kw">&gt;</span>article<span class="kw">&lt;/article&gt;</span>
+  <span class="kw">&lt;/div&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
+<p>Контейнер сжал блоки до минимума, по содержимому, и разместил в строку! Вёрстка выглядит неряшливо, но ведь мы не довели задуманное до конца ⁠— не задали ширину блоков посредством классов с префиксом <code>col-</code>, которые, во­‑первых, вернут блокам стопроцентную ширину по умолчанию, а во­‑вторых, зададут пороговые значения точек останова ⁠— при их достижении ширина, высота и положение блоков будут меняться. Ознакомьтесь с таблицей, чтобы понять, какие размерности заложены в сетку Bootstrap.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Префикс класса</th>
+<th>.col-</th>
+<th>.col-sm-</th>
+<th>.col-md-</th>
+<th>.col-lg-</th>
+<th>.col-xl-</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ширина, пикселей</td>
+<td>&lt; 576</td>
+<td>⩾ 576</td>
+<td>⩾ 768</td>
+<td>⩾ 992</td>
+<td>⩾ 1200</td>
+</tr>
+</tbody>
+</table>
+<p>Рассмотрим пример. Пусть ширина <code>div.row</code> равна или превышает 768 пикселей. Тогда причисление <code>nav</code> и <code>article</code> к классу <code>col-md-6</code> приравняет ширину каждого из них к <sup>6</sup>⁄<sub>12</sub> ширины родителя, выровняет по высоте и разместит эти элементы на одной <em>горизонтальной</em> оси. Ширина <code>div.row</code> меньше 768 пикселей вернёт <code>nav</code> и <code>article</code> к стопроцентной ширине и размещению на одной <em>вертикальной</em> оси.</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;container-fluid&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;row&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;nav</span><span class="ot">     class=</span><span class="st">&quot;col-lg-6 bg-primary&quot;</span><span class="kw">&gt;</span>nav<span class="kw">&lt;/nav&gt;</span>
+    <span class="kw">&lt;article</span><span class="ot"> class=</span><span class="st">&quot;col-lg-6 bg-warning&quot;</span><span class="kw">&gt;</span>article<span class="kw">&lt;/article&gt;</span>
+  <span class="kw">&lt;/div&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
+<p>Рассмотрим ещё один пример. Меню обычно занимает меньше места, чем статья, поэтому пусть при средней и большой ширине <code>div.row</code> элемент <code>nav</code> занимает <sup>3</sup>⁄<sub>12</sub>, <code>article</code> ⁠— <sup>9</sup>⁄<sub>12</sub> ширины родителя. Если ширина <code>div.row</code> равна ширине экрана, то при портретной ориентации iPhone 6/6S/7 элементы <code>nav</code> и <code>article</code> расположатся как две строки, а при ландшафтной ⁠— как два столбца.</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;container-fluid&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;row&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;nav</span><span class="ot">     class=</span><span class="st">&quot;col-lg-3 bg-primary&quot;</span><span class="kw">&gt;</span>nav<span class="kw">&lt;/nav&gt;</span>
+    <span class="kw">&lt;article</span><span class="ot"> class=</span><span class="st">&quot;col-lg-9 bg-warning&quot;</span><span class="kw">&gt;</span>article<span class="kw">&lt;/article&gt;</span>
+  <span class="kw">&lt;/div&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
+<div class="card">
+  <div class="card-body">
+    <div class="container-fluid">
+      <div class="row">
+        <nav     class="col-lg-3 bg-primary">nav</nav>
+        <article class="col-lg-9 bg-warning">article</article>
+      </div>
+    </div>
+  </div>
+</div>
+<p>Добавим <code>aside</code> ⁠— полосу для маловостребованной информации. Пользователи не расстроятся, если на небольших и средних экранах <code>aside</code> отобразится в нижней части страницы. Вместе с тем, на экранах шире 1200 пикселей можно смело пожертвовать шириной <code>article</code> ради <code>aside</code>.</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;container-fluid&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;row&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;nav</span><span class="ot">     class=</span><span class="st">&quot;col-lg-3  col-xl-3 bg-primary&quot;</span><span class="kw">&gt;</span>nav<span class="kw">&lt;/nav&gt;</span>
+    <span class="kw">&lt;article</span><span class="ot"> class=</span><span class="st">&quot;col-lg-9  col-xl-6 bg-warning&quot;</span><span class="kw">&gt;</span>article<span class="kw">&lt;/article&gt;</span>
+    <span class="kw">&lt;aside</span><span class="ot">   class=</span><span class="st">&quot;col-lg-12 col-xl-3 bg-success&quot;</span><span class="kw">&gt;</span>aside<span class="kw">&lt;/aside&gt;</span>
+  <span class="kw">&lt;/div&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
+<div class="card">
+  <div class="card-body">
+    <div class="container-fluid">
+      <div class="row">
+        <nav     class="col-lg-3  col-xl-3 bg-primary">nav</nav>
+        <article class="col-lg-9  col-xl-6 bg-warning">article</article>
+        <aside   class="col-lg-12 col-xl-3 bg-success">aside</aside>
+      </div>
+    </div>
+  </div>
+</div>
+<p>Контейнер не ограничивает количество дочерних строк, а колонки не ограничивают количество дочерних контейнеров. В следующем примере подвал находится в отдельной строке и поэтому не окажется на одной горизонтальной оси с <code>nav</code>, <code>article</code> и <code>aside</code> даже при изменении ширины.</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;container-fluid&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;row&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;nav</span><span class="ot">     class=</span><span class="st">&quot;col-lg-3  col-xl-3 bg-primary&quot;</span><span class="kw">&gt;</span>nav<span class="kw">&lt;/nav&gt;</span>
+    <span class="kw">&lt;article</span><span class="ot"> class=</span><span class="st">&quot;col-lg-9  col-xl-6 bg-warning&quot;</span><span class="kw">&gt;</span>article<span class="kw">&lt;/article&gt;</span>
+    <span class="kw">&lt;aside</span><span class="ot">   class=</span><span class="st">&quot;col-lg-12 col-xl-3 bg-success&quot;</span><span class="kw">&gt;</span>aside<span class="kw">&lt;/aside&gt;</span>
+  <span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;row&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;footer</span><span class="ot">  class=</span><span class="st">&quot;col-12 bg-primary&quot;</span><span class="kw">&gt;</span>footer<span class="kw">&lt;/nav&gt;</span>
+  <span class="kw">&lt;/div&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
+</section>
+</section>
+<section class="level2">
+<h2>Таблицы</h2>
+<p>Немного терминологии:</p>
+<ul>
+<li><code>table</code>;
+<ul>
+<li><code>caption</code> ⁠— тематический заголовок таблицы, совокупно с нумерационным заголовком таблицы (CSS) образующий её шапку;</li>
+<li><code>thead</code> ⁠— заголовочная часть таблицы, или головка;
+<ul>
+<li><code>tr</code> ⁠— ярус;
+<ul>
+<li><code>td</code> ⁠— заголовок боковика;</li>
+<li><code>th</code> ⁠— заголовок графы;</li>
+</ul></li>
+</ul></li>
+<li><code>tbody</code> ⁠— хвостовая часть таблицы, или хвост;
+<ul>
+<li><code>tr</code> ⁠— строка таблицы;
+<ul>
+<li><code>th</code> ⁠— боковик;</li>
+<li><code>td</code> ⁠— графа;</li>
+</ul></li>
+</ul></li>
+<li><code>tfoot</code> ⁠— </li>
+</ul></li>
+</ul>
+<p>Таблицы, особенно многоколоночные, опасны</p>
+<p>, так как не уместятся в области просмотра, и на веб­‑странице появится горизонтальная полоса прокрутки. Класс <code>table-responsive</code></p>
+<p>На текущий момент (август 2017 г.) в инструкции к Bootstrap 4.0.0­‑beta допущена ошибка: класс <code>table-responsive</code> следует назначать не таблице, а её родительскому элементу.</p>
+<p>К элементу <code>table</code> можно применить следующие классы:</p>
+<ul>
+<li><code>table</code> ⁠— стопроцентная ширина таблицы относительно ширины родительского элемента;</li>
+<li><code>table-bordered</code> ⁠— разлиновка граф таблицы;</li>
+<li><code>table-inverse</code> ⁠— инверсия цветового оформления таблицы: установка тёмного цвета фона и светлого цвета текста;</li>
+<li><code>table-hover</code> ⁠— подсветка графы, на которую наведён указатель мыши;</li>
+<li><code>table-striped</code> ⁠— zebra striping. Согласно <a href="https://alistapart.com/article/zebrastripingmoredataforthecase/">исследованию 2008 г.</a>, построчное чередование фонового цвета граф ускоряет поиск по таблице, нравится большинству ⁠— 31 % и совершенно не нравится только 4 % респондентов. Для сравнения, разлиновку граф предпочли 20 % и отвергли также 4 % участников опроса.</li>
+</ul>
+<p>К элементу <code>thead</code> можно применить следующие классы:</p>
+<ul>
+<li><code>thead-inverse</code> ⁠— инверсия цветового оформления; эффект заметен, если для таблицы не установлены правила <code>table-inverse</code>.</li>
+</ul>
+<p>К любым табличным элементам можно применять следующие классы:</p>
+<ul>
+<li><code>table-active</code>, <code>table-danger</code>, <code>table-dark</code>, <code>table-info</code>, <code>table-light</code>, <code>table-primary</code>, <code>table-secondary</code>, <code>table-success</code>, <code>table-warning</code> ⁠— цвет фона с учётом <code>table-hover</code>;</li>
+<li><code>bg-danger</code>, <code>bg-info</code>, <code>bg-primary</code>, <code>bg-success</code>, <code>bg-warning</code> ⁠— цвет фона, игнорирующий <code>table-hover</code>;</li>
+<li><code>text-danger</code>, <code>text-dark</code>, <code>text-info</code>, <code>text-light</code>, <code>text-primary</code>, <code>text-secondary</code>, <code>text-success</code>, <code>text-warning</code> ⁠— цвет текста.</li>
+</ul>
+<div class="sourceCode" include="src/bootstrap/5.tables.html"><pre class="sourceCode html"><code class="sourceCode html">
+
+<span class="dt">&lt;!doctype </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;ru&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;utf-8&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> http-equiv=</span><span class="st">&quot;X-UA-Compatible&quot;</span><span class="ot"> content=</span><span class="st">&quot;IE=Edge&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;HandheldFriendly&quot;</span><span class="ot"> content=</span><span class="st">&quot;true&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;MobileOptimized&quot;</span><span class="ot"> content=</span><span class="st">&quot;0&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;viewport&quot;</span>
+<span class="ot">          content=</span><span class="st">&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;title&gt;</span>Заготовка для шаблона Bootstrap<span class="kw">&lt;/title&gt;</span>
+    <span class="kw">&lt;link</span>
+<span class="ot">      rel=</span><span class="st">&quot;stylesheet&quot;</span>
+<span class="ot">      href=</span><span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css&quot;</span>
+<span class="ot">      integrity=</span><span class="st">&quot;sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M&quot;</span>
+<span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;script</span>
+<span class="ot">      defer</span>
+<span class="ot">      src=</span><span class="st">&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot;</span>
+<span class="ot">      integrity=</span><span class="st">&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot;</span>
+<span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+    <span class="kw">&lt;script</span>
+<span class="ot">      defer</span>
+<span class="ot">      src=</span><span class="st">&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js&quot;</span>
+<span class="ot">      integrity=</span><span class="st">&quot;sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4&quot;</span>
+<span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+    <span class="kw">&lt;script</span>
+<span class="ot">      defer</span>
+<span class="ot">      src=</span><span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js&quot;</span>
+<span class="ot">      integrity=</span><span class="st">&quot;sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1&quot;</span>
+<span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+  <span class="kw">&lt;/head&gt;</span>
+  <span class="kw">&lt;body&gt;</span>
+<span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;table-responsive&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;table</span><span class="ot"> class=</span><span class="st">&quot;table table-hover table-striped&quot;</span><span class="kw">&gt;</span>
+
+    <span class="kw">&lt;caption</span><span class="ot"> style=</span><span class="st">&quot;caption-side: top&quot;</span><span class="kw">&gt;</span>Example<span class="kw">&lt;/capton&gt;</span>
+
+    <span class="kw">&lt;thead</span><span class="ot"> class=</span><span class="st">&quot;thead-inverse&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;tr&gt;</span>
+        <span class="kw">&lt;th&gt;</span>Фамилия<span class="kw">&lt;/th&gt;</span>
+        <span class="kw">&lt;th&gt;</span>Зарплата<span class="kw">&lt;/th&gt;</span>
+      <span class="kw">&lt;/tr&gt;</span>
+    <span class="kw">&lt;/thead&gt;</span>
+
+    <span class="kw">&lt;tbody&gt;</span>
+      <span class="kw">&lt;tr&gt;</span>
+        <span class="kw">&lt;td&gt;</span>Иванов Иван Иванович&lt;/td&gt;
+        <span class="kw">&lt;td&gt;</span>100<span class="kw">&lt;/td&gt;</span>
+      <span class="kw">&lt;/tr&gt;</span>
+      <span class="kw">&lt;tr&gt;</span>
+        <span class="kw">&lt;td&gt;</span>Петров&lt;/td&gt;
+        <span class="kw">&lt;td</span><span class="ot"> class=</span><span class="st">&quot;table-success text-success&quot;</span><span class="kw">&gt;</span>200<span class="kw">&lt;/td&gt;</span>
+      <span class="kw">&lt;/tr&gt;</span>
+      <span class="kw">&lt;tr&gt;</span>
+        <span class="kw">&lt;td&gt;</span>Сидоров&lt;/td&gt;
+        <span class="kw">&lt;td&gt;</span>150<span class="kw">&lt;/td&gt;</span>
+      <span class="kw">&lt;/tr&gt;</span>
+    <span class="kw">&lt;/tbody&gt;</span>
+
+  <span class="kw">&lt;/table&gt;</span>
+<span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre></div>
+</section>
+</section></main>
+
+  
+  
+</body>
+</html>
